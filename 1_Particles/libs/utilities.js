@@ -19,5 +19,14 @@ const range = (start, end, step = 1) => {
 	return output;
 };
 
-// export default range;
-export default range;
+const randomRange = (start, end) => {
+	if (!end) {
+		end = start;
+		start = 0;
+	}
+
+	return start + Math.random() * (end - start);
+};
+
+// export default range and randomRange
+export { range, randomRange };
