@@ -1,4 +1,4 @@
-import { randomRange, range } from "./libs/utilities.js";
+import { randomRange, range } from "../libs/utilities.js";
 
 const btn = document.querySelector(".particleButton");
 
