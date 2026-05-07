@@ -2,11 +2,11 @@ import { randomRange, range } from "../libs/utilities.js";
 
 const btn = document.querySelector(".particleButton");
 
-btn.addEventListener("click", (e) => {
+btn.addEventListener("click", () => {
 	// TODO: Generate stars on click!
 	// Here’s the emoji to use: ⭐
 
-	for (let i = 0; i < 10; i++) {
+	range(10).forEach(() => {
 		const star = document.createElement("span");
 		const star_wrapper = document.querySelector(".stars_wrapper");
 
@@ -17,7 +17,7 @@ btn.addEventListener("click", (e) => {
 
 		// Add star to the DOM
 		star_wrapper.appendChild(star);
-	}
+	});
 });
 
 /*
