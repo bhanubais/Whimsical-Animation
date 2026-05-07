@@ -43,3 +43,26 @@ body {
  * Custom Styles
  * ==================================
  */
+.stars_wrapper {
+	position: fixed;
+	inset: 0;
+	z-index: -1;
+}
+.star {
+	position: absolute;
+	animation: fadeIn 1000ms;
+	font-size: 0.5rem;
+	overflow: hidden;
+	pointer-events: none;
+	user-select: none;
+	opacity: 1;
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
