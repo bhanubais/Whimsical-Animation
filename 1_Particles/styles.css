@@ -63,7 +63,7 @@ body {
 	height: 10px;
 	border-radius: 50%;
 	background: hsla(0, 0%, 100%, 0.728);
-	animation: fadeOut 1000ms forwards;
+	animation: fadeOut forwards;
 }
 
 @keyframes fadeOut {
