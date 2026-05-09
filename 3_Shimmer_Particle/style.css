@@ -19,6 +19,7 @@
 		inset 0px 5px 5px hsl(175deg 100% 90% / 0.75);
 	font-weight: 500;
 	cursor: pointer;
+	overflow: hidden;
 
 	/*
     Add a white glow near the top of the button,

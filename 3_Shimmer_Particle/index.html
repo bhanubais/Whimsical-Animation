@@ -8,6 +8,16 @@
         <title>Shimmer Particle</title>
         <link rel="stylesheet" href="style.css">
         <style>
+            @keyframes moveIn {
+                from {
+                    transform: translateX(-100%);
+                }
+
+                to {
+                    transform: translateX(100%);
+                }
+            }
+
             .shimmer {
                 position: absolute;
                 inset: 0;
@@ -17,6 +27,8 @@
                         transparent,
                         hsl(180deg 100% 90%),
                         transparent);
+                animation: moveIn forwards;
+                opacity: 0.5;
             }
         </style>
     </head>
